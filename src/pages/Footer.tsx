@@ -1,21 +1,15 @@
 import { Col, Row } from "react-bootstrap";
 import appStore from "../assets/footerImgs/appStore.png";
-import googlePlay from "../assets/footerImgs/googlePlay.png";
+import googlePlay from "../assets/footerImgs/google-play.png";
 import companies from "../assets/footerImgs/companies.png";
 import { BsFacebook, BsInstagram, BsTwitter } from "react-icons/bs";
 
 const Footer = () => {
   return (
-    <>
-      <Row
-        xs={1}
-        md={3}
-        lg={4}
-        className=" bg-black"
-        style={{ color: "white", marginTop: "4rem" }}
-      >
-        <Col className="mx-3 my-3">
-          <h4 className="my-3">About us</h4>
+    <div className="bg-black px-3">
+      <Row xs={1} md={3} lg={4} style={{ color: "white", marginTop: "4rem" }}>
+        <Col>
+          <h4 className="my-3 ">About us</h4>
           <p>
             <a
               href="#"
@@ -50,7 +44,7 @@ const Footer = () => {
             </a>
           </p>
         </Col>
-        <Col className="mx-3 my-3">
+        <Col>
           <h4 className="my-3">Help</h4>
           <p>
             <a
@@ -77,31 +71,50 @@ const Footer = () => {
             </a>
           </p>
         </Col>
-        <Col className="mx-3 my-3">
-          <h4 className="my-3">Mobile Apps</h4>
-          <span className="d-flex align-items-center">
-            <img src={appStore} style={{ width: "8rem" }} />
-            <img src={googlePlay} style={{ width: "10rem" }} />
-          </span>
+        <Col>
+          <h4 className="mt-4">Mobile Apps</h4>
+          <div style={{ width: "10rem" }} className="d-flex flex-column ">
+            <a href="#">
+              <img
+                src={googlePlay}
+                style={{
+                  marginBottom: "1rem",
+                  height: "3rem",
+                }}
+              />
+            </a>
+            <a href="#">
+              <img
+                src={appStore}
+                style={{
+                  height: "3rem",
+                  width: "10rem",
+                }}
+              />
+            </a>
+          </div>
         </Col>
-        <Col className="mx-3 my-3">
-          <h4 className="my-3">Safe Shopping</h4>
-          <img src={companies} style={{ width: "260px", height: "45px" }} />
+        <Col>
+          <h4 className="mt-4">Safe Shopping</h4>
+          <img
+            src={companies}
+            style={{ width: "15rem", height: "45px", paddingRight: "0" }}
+          />
         </Col>
-        <Col className="mx-3 my-3">
-          <h4>Follow Us</h4>
+        <Col className="mb-3 ">
+          <h4 className="mt-4">Follow Us</h4>
           <a href="#" className="fs-4 mx-2" style={{ color: "#0165E1" }}>
             <BsFacebook />
           </a>
           <a href="#" className="fs-4 mx-2" style={{ color: "#C13584" }}>
             <BsInstagram />
           </a>
-          <a href="#" className="fs-4 mx-2" style={{ color: "#55acee" }}>
+          <a href="#" className="fs-4 mx-2 " style={{ color: "#55acee" }}>
             <BsTwitter />
           </a>
         </Col>
       </Row>
-    </>
+    </div>
   );
 };
 
