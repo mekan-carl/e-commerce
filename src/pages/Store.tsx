@@ -7,7 +7,7 @@ export function Store() {
   return (
     <>
       <SearchInput />
-      <Row sm={1} md={2} lg={3} xl={4} className="g-3 ps-2">
+      <Row sm={1} md={2} lg={3} xl={4} className="g-3">
         {storeitems.map((item) => (
           <Col key={item.id}>
             <StoreItem {...item} />
