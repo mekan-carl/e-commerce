@@ -3,10 +3,10 @@ import img1 from "../assets/new arrivals/new arr no 1.jpeg";
 import img2 from "../assets/new arrivals/new arr no 2.webp";
 import img3 from "../assets/new arrivals/new arr no 3.webp";
 import img4 from "../assets/new arrivals/new arr no 4.webp";
-import img9 from "../assets/new arrivals/new arr no 9.webp";
-import img10 from "../assets/new arrivals/new arr no 10.webp";
 import img7 from "../assets/new arrivals/new arr no 7.webp";
 import img8 from "../assets/new arrivals/new arr no 8.webp";
+import img9 from "../assets/new arrivals/new arr no 9.webp";
+import img10 from "../assets/new arrivals/new arr no 10.webp";
 
 function NewArrivals() {
   return (
