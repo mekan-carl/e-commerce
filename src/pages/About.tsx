@@ -6,7 +6,7 @@ const About = () => {
     <>
       <Row xs={1} md={2} style={{ marginTop: "5rem" }}>
         <Col data-aos="fade-right">
-          <img className="img-fluid" src={storeImg} alt="store-Image" />
+          <img className="img-fluid mb-3" src={storeImg} alt="store-Image" />
         </Col>
         <Col data-aos="fade-left">
           <h2 className="text-center ">About Us</h2>
