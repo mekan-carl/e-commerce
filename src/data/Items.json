@@ -1,0 +1,75 @@
+[
+    {
+        "id":1,
+        "name":"Black Dress with white flowers",
+        "price":70.50,
+        "imgUrl":"/images/store dress n0 1.webp"
+    },
+    {
+        "id":2,
+        "name":" dress with butterfly ",
+        "price":85.50,
+        "imgUrl":"/images/store img n 2.webp"
+    },
+    {
+        "id":3,
+        "name":"Beautiful orange dress",
+        "price":90.50,
+        "imgUrl":"/images/store img no 3.webp"
+    },
+    {
+        "id":4,
+        "name":"Creamy-color Dress",
+        "price":70.90,
+        "imgUrl":"/images/store img no 4.webp"
+    },
+
+    {
+        "id":6,
+        "name":"Skater Street fashion ",
+        "price":80.90,
+        "imgUrl":"/images/store img no 5.jpg"
+    },
+    {
+        "id":7,
+        "name":"Black beautiful dress",
+        "price":70.50,
+        "imgUrl":"/images/store im g no 6.webp"
+    },
+    {
+        "id":8,
+        "name":"Creamy color summer dress",
+        "price":50.50,
+        "imgUrl":"/images/store img no 7.webp"
+    },
+    {
+        "id":9,
+        "name":"Black summer combination",
+        "price":75.50,
+        "imgUrl":"/images/store img no 8.webp"
+    },
+    {
+        "id":10,
+        "name":"Green summer dress",
+        "price":80.50,
+        "imgUrl":"/images/store img no 9.webp"
+    },
+    {
+        "id":11,
+        "name":"Creamy color jacket",
+        "price":50.50,
+        "imgUrl":"/images/creamy color woman jacket.jpg"
+    },
+    {
+        "id":5,
+        "name":"Black guipure dress",
+        "price":40.50,
+        "imgUrl":"/images/dress.jpg"
+    },
+    {
+        "id":12,
+        "name":"Red pant combination",
+        "price":70.50,
+        "imgUrl":"/images/new season dress.jpg"
+    }
+]
