@@ -19,7 +19,7 @@ const SearchInput = () => {
             placeholder="Search..."
             onChange={(e) => setSearch(e.target.value)}
           />
-          <Button type="button" variant="outline-dark" id="button-addon1">
+          <Button type="submit" variant="outline-dark" id="button-addon1">
             <BsSearch />
           </Button>
         </InputGroup>
