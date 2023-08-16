@@ -9,8 +9,7 @@ const SearchInput = () => {
   const ref = useRef<HTMLInputElement>(null);
 
   function focus() {
-    ref.current?.focus();
-    ref.current?.value;
+    if (ref.current?.focus()) return ref.current?.value;
   }
   return (
     <>
