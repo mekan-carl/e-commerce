@@ -1,25 +1,34 @@
 import { BsSearch } from "react-icons/bs";
-import { useState } from "react";
+import { useRef, useState } from "react";
 import storeItems from "../data/Items.json";
 import { Button, Col, Form, InputGroup, Row } from "react-bootstrap";
 import StoreItem from "./StoreItem";
 
 const SearchInput = () => {
   const [search, setSearch] = useState("");
+  const ref = useRef<HTMLInputElement>(null);
 
+  function focus() {
+    ref.current?.focus();
+    ref.current?.value;
+  }
   return (
     <>
       <span className="fs-2 me-2">Store</span>
-      <Form>
+      <Form
+        onSubmit={(event) => {
+          event.preventDefault();
+        }}
+      >
         <InputGroup className="mb-5 shadow-sm ">
           <Form.Control
-            aria-label="Example text with button addon"
-            aria-describedby="basic-addon1"
+            ref={ref}
             type="search"
             placeholder="Search..."
+            value={search}
             onChange={(e) => setSearch(e.target.value)}
           />
-          <Button type="submit" variant="outline-dark" id="button-addon1">
+          <Button variant="outline-dark" type="submit" onClick={focus}>
             <BsSearch />
           </Button>
         </InputGroup>
