@@ -1,0 +1,65 @@
+import { Button } from "react-bootstrap";
+import Form from "react-bootstrap/Form";
+
+const Formm = () => {
+  return (
+    <>
+      <Form
+        action="https://formsubmit.co/c626085b01dd9331a55000f210204192"
+        method="post"
+      >
+        {/* Honeypot Catchs spammer name="_honey" */}
+        <Form.Control
+          type="hidden"
+          name="_honey"
+          style={{ display: "none" }}
+          value="false"
+        />
+        {/* Disable Capcha  => robot auth */}
+        <Form.Control type="hidden" name="_captcha" value="false" />
+
+        <Form.Control
+          type="hidden"
+          name="_next"
+          value="https://e-commerce-mekan-carl.vercel.app/succes"
+        />
+
+        <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
+          <Form.Label>Name</Form.Label>
+          <Form.Control type="text" name="name" placeholder="name" required />
+        </Form.Group>
+        <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
+          <Form.Label>Last Name</Form.Label>
+          <Form.Control
+            type="text"
+            name="Last&nbsp;Name"
+            placeholder="name"
+            required
+          />
+        </Form.Group>
+        <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
+          <Form.Label>Email address</Form.Label>
+          <Form.Control
+            type="email"
+            name="email"
+            placeholder="email@gmail.com"
+            required
+          />
+        </Form.Group>
+        <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
+          <Form.Label>phone number</Form.Label>
+          <Form.Control type="number" name="phone" placeholder="phone number" />
+        </Form.Group>
+        <Form.Group className="mb-3" controlId="exampleForm.ControlTextarea1">
+          <Form.Label>Example textarea</Form.Label>
+          <Form.Control as="textarea" name="comments&nbsp;questions" rows={3} />
+        </Form.Group>
+        <Button variant="info" type="submit">
+          Submit
+        </Button>
+      </Form>
+    </>
+  );
+};
+
+export default Formm;
