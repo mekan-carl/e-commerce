@@ -28,7 +28,7 @@ const Formm = () => {
         <Form.Control
           type="hidden"
           name="_next"
-          value="https://e-commerce-mekan-carl.vercel.app/succes"
+          value="https://e-commerce-peach-nine.vercel.app/success"
         />
 
         <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
