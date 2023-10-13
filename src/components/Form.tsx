@@ -22,12 +22,6 @@ const Formm = () => {
         <Form.Control
           type="hidden"
           name="_next"
-          value="https://e-commerce-mekan-carl.vercel.app/success"
-        />
-
-        <Form.Control
-          type="hidden"
-          name="_next"
           value="https://e-commerce-peach-nine.vercel.app/success"
         />
 
