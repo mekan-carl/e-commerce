@@ -4,10 +4,7 @@ import Form from "react-bootstrap/Form";
 const Formm = () => {
   return (
     <>
-      <Form
-        action="https://formsubmit.co/c626085b01dd9331a55000f210204192"
-        method="post"
-      >
+      <Form action="https://formsubmit.co/smekan2320@gmail.com" method="post">
         {/* Honeypot Catchs spammer name="_honey" */}
         <Form.Control
           type="hidden"
