@@ -18,6 +18,13 @@ const Formm = () => {
         {/* Disable Capcha  => robot auth */}
         <Form.Control type="hidden" name="_captcha" value="false" />
 
+        {/* redirecting to success page */}
+        <Form.Control
+          type="hidden"
+          name="_next"
+          value="https://e-commerce-mekan-carl.vercel.app/success"
+        />
+
         <Form.Control
           type="hidden"
           name="_next"
