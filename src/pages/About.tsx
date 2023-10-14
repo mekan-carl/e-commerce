@@ -1,6 +1,5 @@
 import { Col, Row } from "react-bootstrap";
 import storeImg from "../assets/aboutImgs/store-img.jpg";
-import Formm from "../components/Form";
 
 const About = () => {
   return (
@@ -38,7 +37,6 @@ const About = () => {
         loading="lazy"
         referrerPolicy="no-referrer-when-downgrade"
       ></iframe>
-      <Formm />
     </>
   );
 };
